@@ -1,8 +1,10 @@
 {% if menu | length > 0 %}
-<ul class="{{ ul_style | default('list-inline') }}">
+<ul class="navbar-list">
     {% for link in menu %}
-    <li><a href="{% if link.site_url == true %}{{ site.url }}{% endif %}{{ link.url }}">
-        {{ link.name }}</a>
+    <li class="navbar-item">
+        <a href="{% if link.site_url == true %}{{ site.url }}{% endif %}{{ link.url }}" class="navbar-link">
+            {{ link.name }}
+        </a>
     </li>
     {% endfor %}
 </ul>

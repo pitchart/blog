@@ -1,6 +1,6 @@
-title: "Welcome to Spress"
-description: "A site creted by Spress"
-logo: "spresso-logo.png"
+title: "Pitchart"
+description: "Web developer, with Picardie flavour"
+logo: "logo.jpg"
 
 # Your site's domain. E.g: http://yoursite.com
 url: ""
@@ -14,11 +14,11 @@ comments:
 
 # Information about author
 author:
-    name: "Your Name"
+    name: "Pitchart"
 
     # Social networks
-    twitter: "spress_cms"
-    github: "https://github.com/spress/Spress"
+    twitter: "pitchart"
+    github: "https://github.com/pitchart"
     bitbucket:
     facebook:
     linkedin:
@@ -39,7 +39,7 @@ feed:
 
 # Facebook Open Graph
 open_graph:
-    locale: "en_US"
+    locale: "fr_FR"
 
 # Code highlight for <pre> and <code> tags
 # Powered by http://highlightjs.org/
@@ -51,8 +51,9 @@ bing_verify:
 
 # Page menus
 top_menu:
-    - { name: Home, url: "/" }
-    - { name: Projects, url: "/projects" }
+    - { name: Accueil, url: "/" }
+    - { name: Projets, url: "/projets" }
+    - { name: Projets, url: "/projets" }
 
 bottom_menu:
     - { name: "Go to Spresso theme web", url: "https://github.com/yosymfony/Spress-theme-spresso" }
