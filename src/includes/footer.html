@@ -1,0 +1,20 @@
+<footer id="footer">
+    <div class="row">
+        <div class="column small-12 medium-4">
+            {% include 'menu.html' with { menu: site.bottom_menu } %}
+        </div>
+        <div class="column small-12 medium-4">
+            {% include 'social-network.html' %}
+        </div>
+        <div class="column small-12 medium-4">
+            {% include 'categories.html' %}
+        </div>
+    </div>
+    <p class="text-center">
+        <a href="https://github.com/yosymfony/Spress-theme-spresso" title="Spresso theme">
+            <img src="{{ site.url }}/assets/img/{{ site.logo }}" height="32" width="32"/>
+        </a>
+        &copy; {{ 'now' | date('Y') }} {{ site.author.name }}.
+        Powered by <a href="http://spress.yosymfony.com">Spress</a>.
+    </p>
+</footer>

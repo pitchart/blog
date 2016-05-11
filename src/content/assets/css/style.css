@@ -1,9 +1,41 @@
+/*
+#e1f5fe light-blue lighten-5
+#b3e5fc light-blue lighten-4
+#81d4fa light-blue lighten-3
+#4fc3f7 light-blue lighten-2
+#29b6f6 light-blue lighten-1
+#03a9f4 light-blue
+#039be5 light-blue darken-1
+#0288d1 light-blue darken-2
+#0277bd light-blue darken-3
+#01579b light-blue darken-4
+#80d8ff light-blue accent-1
+#40c4ff light-blue accent-2
+#00b0ff light-blue accent-3
+#0091ea light-blue 
+
+#fff3e0 orange lighten-5
+#ffe0b2 orange lighten-4
+#ffcc80 orange lighten-3
+#ffb74d orange lighten-2
+#ffa726 orange lighten-1
+#ff9800 orange
+#fb8c00 orange darken-1
+#f57c00 orange darken-2
+#ef6c00 orange darken-3
+#e65100 orange darken-4
+#ffd180 orange accent-1
+#ffab40 orange accent-2
+#ff9100 orange accent-3
+#ff6d00 orange accent-4
+*/
+
 body {
-    font-family: Georgia, "Times New Roman", serif;
+    font-family: Helvetica, Arial, sans-serif;
 }
 
 a {
-    color: #0085CA;
+    color: #f57c00;
 }
 a, a:link, a:visited { text-decoration: underline; }
 
@@ -12,10 +44,10 @@ code {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: Share, Helvetica, Arial, sans-serif;
 }
 h1 {
-    color: #0085CA;
+    color: #fb8c00;
 }
     h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { color: inherit; }
     h1 a, h1 a:link, h1 a:visited,
@@ -32,6 +64,7 @@ h1 {
     h4 a:hover, h4 a:focus,
     h5 a:hover, h5 a:focus,
     h6 a:hover, h6 a:focus {
+        color: inherit;
         text-decoration: underline;
     }
 
@@ -60,34 +93,81 @@ h1 {
     margin: 0 auto;
 }
 
-.stripe {}
+.pageContent {
+    padding: 1.5em 0;
+}
+
+.stripe {
+    background-color: #ff9800;
+    color: #FFF;
+}
     .stripe a, .stripe a:visited, .stripe a:link {
         color: inherit;
     }
-.stripe--black {
-    background-color: #252d31;
-    color: #FFF;
+.stripe--light {
+    background-color: #fff3e0;
+    color: #000;
 }
+.stripe--darker {
+    background-color: #f57c00;
+}
+
+.shadow-1 {
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+}
+.shadow-2 {
+    -moz-box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.brand {
+    padding: 0.75em 1em;
+    font-family: Share, Helvetica, Arial, sans-serif;
+}
+    .brand-name {
+        font-size: 1.5em;
+    }
+    .brand-name, .brand-name:visited, .brand-name:link {
+        text-decoration: none;
+    }
+
+    .brand-name:hover, .brand-name:focus {
+        text-decoration: underline;
+    }
+
 .navbar {
     font-family: Helvetica, Arial, sans-serif;
-    border-top: 1px solid #ccc;
-    border-bottom: 1px solid #ccc;
 }
     .navbar-list {
         padding: 0; margin: 0;
+        display: block;
+        list-style-type: none;
     }
-        .navbar-item { display: inline-block; }
+    .navbar-list::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+        .navbar-item { float: left; }
             .navbar-link {
-                display: inline-block;
-                padding: 0.75em 2.5em;
+                display: block;
+                transition: background-color .3s;
+                margin:0;
+                padding: 0.5em 2em;
                 text-transform: uppercase;
                 border-width: 0;
                 border-left-width: 1px;
                 border-image: linear-gradient(to bottom, transparent 0%, transparent 25%, #FFF 50%, transparent 75%, transparent 100%) 1 1 1 1;
+                font-size: 1.25em; font-family: Share, Helvetica, Arial, sans-serif;
             }
 
             .navbar-item:first-child .navbar-link {
                 border-left-width: 0;
+            }
+
+            .navbar-link:hover, .navbar-link:focus {
+                background-color: #e65100;
             }
 
             .navbar-link, .navbar-link:visited, .navbar-link:link {
@@ -97,7 +177,12 @@ h1 {
                 text-decoration: underline;
             }
 
-
+.post {
+    background-color: #FFF;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+    padding: 1em 2em;
+    margin-bottom: 1em;
+}
 
 /* Post */
 .post footer {

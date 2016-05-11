@@ -5,8 +5,9 @@
     </head>
     <body>
         {% include 'nav.html' %}
-
-        <div class="pageWidth">
+        
+        <div class="stripe stripe--light">
+            <div class="pageWidth pageContent">
             <div class="row">
                 <div class="column small-12">
                     {% block content %}
@@ -15,29 +16,16 @@
                 </div>
             </div>
         </div>
-
-        <footer id="footer">
-            <div class="pageWidth">
-                <div class="row">
-                    <div class="col-md-6">
-                        {% include 'menu.html' with { menu: site.bottom_menu } %}
-                    </div>
-                    <div class="col-md-6 text-right">
-                        {% include 'social-network.html' %}
-                    </div>
-                </div>
-                <p class="text-center">
-                    <a href="https://github.com/yosymfony/Spress-theme-spresso" title="Spresso theme">
-                        <img src="{{ site.url }}/assets/img/{{ site.logo }}"/>
-                    </a>
-                </p>
-                <p class="text-center">
-                    &copy; {{ 'now' | date('Y') }} {{ site.author.name }}.
-                    Powered by <a href="http://spress.yosymfony.com">Spress</a>.
-                </p>
+        </div>
+        
+        <div class="stripe stripe--darker">
+            <div class="pageWidth pageContent">
+                {% include 'footer.html' %}
             </div>
+        </div>
 
-            <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
             <script src="{{ site.url }}/assets/js/bootstrap.min.js"></script>
 
             {% if site.code_highlight %}
@@ -46,6 +34,5 @@
             {% endif %}
 
             {% block javascript %}{% endblock %}
-        </footer>
     </body>
 </html>

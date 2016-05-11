@@ -2,7 +2,7 @@
 layout: "post"
 title: "Sample Post"
 description: "Just about everything you'll need to style in the theme"
-categories: ["articles"]
+categories: ["Frontend"]
 tags: ["sample post", "posts"]
 ---
 Below is just about everything you'll need to style in the theme. Check the source code to see the many embedded elements within paragraphs.
@@ -23,7 +23,7 @@ Below is just about everything you'll need to style in the theme. Check the sour
 
 Lorem ipsum dolor sit amet, test link adipiscing elit. **This is strong**. Nullam dignissim convallis est. Quisque aliquam.
 
-
+|more|
 
 *This is emphasized*. Donec faucibus. Nunc iaculis suscipit dui. 53 = 125. Water is H<sub>2</sub>O. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. The New York Times <cite>(That’s a citation)</cite>. <u>Underline</u>. Maecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.
 

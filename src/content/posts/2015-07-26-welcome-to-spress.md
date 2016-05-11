@@ -1,7 +1,7 @@
 ---
 layout: "post"
 title: "Welcome to Spress"
-categories: []
+categories: ["Backend"]
 tags: ["sample post", "posts"]
 ---
 To create a new post, simply runs `spress new:post` command or adds a file
