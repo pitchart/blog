@@ -1,4 +1,11 @@
 <div class="page-header">
+    <div class="stripe">
+        <div class="pageWidth">
+            <a href="#navigation" class="btn btn--darker openNav mrl">
+                O
+            </a>
+        </div>
+    </div>
     <div class="stripe stripe--light shadow-1">
         <div class="pageWidth">
             <div class="brand">
@@ -10,7 +17,7 @@
             </div>
         </div>
     </div>
-    <div class="navbar stripe stripe--darker shadow-2">
+    <div id="navigation" class="navbar stripe stripe--darker shadow-2">
         <div class="pageWidth">
           {% include 'menu.html' with { menu: site.top_menu, ul_style: 'nav navbar-nav' } %}
         </div>
