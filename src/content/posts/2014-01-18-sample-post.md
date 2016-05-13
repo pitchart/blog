@@ -69,4 +69,4 @@ Syntax highlighting via [Highlight.js](http://highlightjs.org/):
 
 Make any link standout more when applying the `.btn` and `.btn-default` classes.
 
-<div><a href="#" class="btn btn-default">This is a button</a></div>
+<div><a href="#" class="btn">This is a button</a></div>

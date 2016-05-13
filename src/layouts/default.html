@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html lang="en">
+<html lang="fr">
     <head>
         {% include 'head.html' %}
     </head>
@@ -10,9 +10,12 @@
             <div class="pageWidth pageContent">
             <div class="row">
                 <div class="column small-12">
-                    {% block content %}
-                        {{ page.content }}
-                    {% endblock %}
+                    <div class="content">
+                        {% block content %}
+                            {{ page.content }}
+                        {% endblock %}
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -27,8 +30,8 @@
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
             <script src="{{ site.url }}/assets/js/bootstrap.min.js"></script>
-
             {% if site.code_highlight %}
+
                 <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
                 <script>hljs.initHighlightingOnLoad();</script>
             {% endif %}
